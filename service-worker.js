@@ -15,7 +15,7 @@ var offlineFundamentals = [
   '',
   'style/main.css',
   'js/global.js',
-   'js/bind_polyfill.js',
+  'js/bind_polyfill.js',
   'js/classlist_polyfill.js',
   'js/animframe_polyfill.js',
   'js/keyboard_input_manager.js',
@@ -25,7 +25,6 @@ var offlineFundamentals = [
   'js/local_storage_manager.js',
   'js/game_manager.js',
   'js/application.js'
-
 ];
 
 /* The install event fires when the service worker is first installed.

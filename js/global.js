@@ -1,17 +1,11 @@
-(function() {
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/2048/service-worker.js').then(function(reg) {
+    console.log('Registration succeeded.');
+    console.dir(reg);
+  }).catch(function(error) {
+    console.log('Registration failed with ' + error);
+    console.dir(error);
+  });
+}
 
-  
-
-  // ServiceWorker is a progressive technology. Ignore unsupported browsers
-  if ('serviceWorker' in navigator) {
-    console.log('CLIENT: service worker registration in progress.');
-    navigator.serviceWorker.register('service-worker.js').then(function() {
-      console.log('CLIENT: service worker registration complete.');
-    }, function() {
-      console.log('CLIENT: service worker registration failure.');
-    });
-  } else {
-    console.log('CLIENT: service worker is not supported.');
-  }
-
-})();
+ 
