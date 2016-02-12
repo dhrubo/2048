@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/2048/service-worker.js').then(function(reg) {
+  navigator.serviceWorker.register('/2048/serviceworker.js').then(function(reg) {
     console.log('Registration succeeded.');
     console.dir(reg);
   }).catch(function(error) {
@@ -7,5 +7,3 @@ if ('serviceWorker' in navigator) {
     console.dir(error);
   });
 }
-
- 
